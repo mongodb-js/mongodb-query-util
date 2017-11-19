@@ -1,0 +1,18 @@
+{
+  "name": "mongodb-query-util",
+  "version": "0.0.0",
+  "description": "Utilty Functions for MongoDB Query Functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "Durran Jordan <durran@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2"
+  }
+}
