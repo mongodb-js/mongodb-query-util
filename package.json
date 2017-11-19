@@ -4,13 +4,23 @@
   "description": "Utilty Functions for MongoDB Query Functionality",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive"
+    "ci": "npm run check && npm test",
+    "test": "mocha --recursive",
+    "fmt": "mongodb-js-fmt ./*.js ./test/*.js",
+    "check": "mongodb-js-precommit"
   },
   "author": "Durran Jordan <durran@gmail.com>",
   "license": "Apache-2.0",
+  "precommit": [
+    "check"
+  ],
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^4.0.1"
+    "eslint-config-mongodb-js": "^2.2.0",
+    "mocha": "^4.0.1",
+    "mongodb-js-fmt": "^0.0.3",
+    "mongodb-js-precommit": "^0.2.9",
+    "pre-commit": "^1.1.2"
   },
   "dependencies": {
     "lodash.get": "^4.4.2"
