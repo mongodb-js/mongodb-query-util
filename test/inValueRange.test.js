@@ -256,6 +256,20 @@ describe('inValueRange [Util]', () => {
     });
   });
 
+  describe('ranges with $exists', () => {
+    beforeEach(() => {
+      query = {$exists: true};
+    });
+
+    it('should detect a match for a range', () => {
+      expect(inValueRange(query, {value: 5, dx: 5})).to.equal('yes');
+    });
+
+    it('should detect a match for single value', () => {
+      expect(inValueRange(query, {value: 10, dx: 0})).to.equal('yes');
+    });
+  });
+
   describe('non-numeric types', () => {
     it('should work for dates', () => {
       query = {$gte: new Date('2011-01-01'), $lte: new Date('2013-01-01')};
