@@ -9,6 +9,11 @@
     "fmt": "mongodb-js-fmt ./*.js ./test/*.js",
     "check": "mongodb-js-precommit"
   },
+  "homepage": "http://github.com/mongodb-js/mongodb-query-util",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mongodb-js/mongodb-query-util.git"
+  },
   "author": "Durran Jordan <durran@gmail.com>",
   "license": "Apache-2.0",
   "precommit": [
