@@ -20,7 +20,7 @@
     "check"
   ],
   "devDependencies": {
-    "bson": "^1.0.4",
+    "bson": "^4.0.3",
     "chai": "^4.1.2",
     "eslint-config-mongodb-js": "^2.2.0",
     "mocha": "^4.0.1",
